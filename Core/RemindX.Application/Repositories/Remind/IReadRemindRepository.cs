@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RemindX.Application.Repositories.Remind
 {
-    internal interface IReadRemindRepository
+    public interface IReadRemindRepository : IReadRepository<RemindX.Domain.Entities.Remind>
     {
     }
 }

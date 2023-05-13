@@ -15,6 +15,6 @@ namespace RemindX.Application.Repositories
 
         Task<T> GetSingleAsync(Expression<Func<T, bool>> method);
 
-        Task<T> GetByIdAsync(string id);
+        Task<T> GetByIdAsync(int id);
     }
 }
