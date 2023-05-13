@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Core\RemindX.Application\RemindX.Application.csproj" />
     <ProjectReference Include="..\..\Core\RemindX.Domain\RemindX.Domain.csproj" />
     <ProjectReference Include="..\..\Infrastructure\RemindX.Infrastructure\RemindX.Infrastructure.csproj" />

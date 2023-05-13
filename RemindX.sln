@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presendation", "Presendation", "{4A2C9DA2-1DF6-46CE-8290-0AEB1F7EAACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemindX.Domain", "Core\RemindX.Domain\RemindX.Domain.csproj", "{58168DA2-6502-4CEF-A6DC-749C38E46FE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemindX.Domain", "Core\RemindX.Domain\RemindX.Domain.csproj", "{58168DA2-6502-4CEF-A6DC-749C38E46FE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemindX.Application", "Core\RemindX.Application\RemindX.Application.csproj", "{69483E5F-172C-4178-9DEE-D0086CED3084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemindX.Application", "Core\RemindX.Application\RemindX.Application.csproj", "{69483E5F-172C-4178-9DEE-D0086CED3084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemindX.Infrastructure", "Infrastructure\RemindX.Infrastructure\RemindX.Infrastructure.csproj", "{0400D4AF-6E0E-4441-9BEF-9E38044EDF78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemindX.Infrastructure", "Infrastructure\RemindX.Infrastructure\RemindX.Infrastructure.csproj", "{0400D4AF-6E0E-4441-9BEF-9E38044EDF78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemindX.API", "Presendation\RemindX.API\RemindX.API.csproj", "{EC5440D4-0BC7-495C-A287-3764CF84C7B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemindX.API", "Presendation\RemindX.API\RemindX.API.csproj", "{EC5440D4-0BC7-495C-A287-3764CF84C7B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemindX.UI", "Presendation\RemindX.UI\RemindX.UI.csproj", "{096C523C-230F-462B-953C-0588826403DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{EC5440D4-0BC7-495C-A287-3764CF84C7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC5440D4-0BC7-495C-A287-3764CF84C7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC5440D4-0BC7-495C-A287-3764CF84C7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096C523C-230F-462B-953C-0588826403DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096C523C-230F-462B-953C-0588826403DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096C523C-230F-462B-953C-0588826403DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096C523C-230F-462B-953C-0588826403DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{69483E5F-172C-4178-9DEE-D0086CED3084} = {20570FC6-EB56-4012-85DD-C78EA55FAFEE}
 		{0400D4AF-6E0E-4441-9BEF-9E38044EDF78} = {BAB387B1-E8C9-4A0C-8558-6ABD5390F2FE}
 		{EC5440D4-0BC7-495C-A287-3764CF84C7B4} = {4A2C9DA2-1DF6-46CE-8290-0AEB1F7EAACD}
+		{096C523C-230F-462B-953C-0588826403DE} = {4A2C9DA2-1DF6-46CE-8290-0AEB1F7EAACD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {54F33B28-F76F-4220-9839-90772E047C42}

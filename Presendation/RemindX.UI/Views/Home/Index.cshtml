@@ -1,0 +1,46 @@
+﻿@using RemindX.Domain.Entities
+@model List<RemindUI>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Receiver</th>
+                <th scope="col">Content</th>
+                <th scope="col">Remind Date</th>
+                <th scope="col">Method Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var i in Model)
+            {
+                <tr>
+                    <td>@i.Id</td>
+                    <td>@i.Receiver</td>
+                    <td>@i.Content</td>
+                    <td>@i.RemindDate</td>
+                    <td>@i.MetodType</td>
+                    <td><a href="/Home/UpdateRemind/@i.Id" class="btn btn-primary">Yenilə</a></td>
+                    <td><a href="" class="btn btn-danger">Sil</a></td>
+                    
+                </tr>
+            }
+         
+        </tbody>
+    </table>
+
+    <a href="/Home/AddRemind/" class="btn btn-success">Yeni Xatırladıçı</a>
+</body>
+</html>

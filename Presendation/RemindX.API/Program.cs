@@ -1,3 +1,4 @@
+using RemindX.Application.Abstractions.Services;
 using RemindX.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
