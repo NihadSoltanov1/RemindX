@@ -8,8 +8,9 @@ namespace RemindX.Application.Abstractions.Services
 {
     public interface ISenderService
     {
-        void RemindByEmail(string to, string content);
+        void RemindByEmail(string to, string content,DateTime remindDate);
 
-        Task RemingByTelegram(string to, string content);
+        Task RemingByTelegram(string to, string content, DateTime remindDate);
+        DateTime Time();
     }
 }

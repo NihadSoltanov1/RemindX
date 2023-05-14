@@ -27,10 +27,10 @@ namespace RemindX.Infrastructure.Repositories.Remind
             switch (model.MetodType)
             {
                 case Domain.Enums.Method.Email:
-                    _senderService.RemindByEmail(model.Receiver,model.Content);
+                    _senderService.RemindByEmail(model.Receiver, model.Content, model.RemindDate);
                     break;
                 case Domain.Enums.Method.Telegram:
-                    _senderService.RemingByTelegram(model.Receiver, model.Content);
+                    _senderService.RemingByTelegram(model.Receiver, model.Content, model.RemindDate);
                     break;
             }
             EntityEntry<Domain.Entities.Remind> entityState = await Table.AddAsync(model);
