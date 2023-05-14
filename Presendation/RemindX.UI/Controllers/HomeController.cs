@@ -44,7 +44,7 @@ namespace RemindX.UI.Controllers
         [HttpGet]
         public async Task<IActionResult> UpdateRemind(int id)
         {
-            var response = await _httpClient.GetAsync("http://localhost:5055/api/Remind/"+id);
+            var response = await _httpClient.GetAsync("http://localhost:5055/api/Remind/" + id);
             if (response.IsSuccessStatusCode)
             {
 
@@ -64,6 +64,15 @@ namespace RemindX.UI.Controllers
             var responseMesaj = await _httpClient.PutAsync("http://localhost:5055/api/Remind\r\n", content);
             if (responseMesaj.IsSuccessStatusCode) return RedirectToAction("Index");
             return View(model);
+        }
+
+
+        public async Task<IActionResult> DeleteRemind(int id)
+        {
+            var response = await _httpClient.DeleteAsync("http://localhost:5055/api/Remind/" + id);
+            if (response.IsSuccessStatusCode) return RedirectToAction("Index");
+
+            return RedirectToAction("Index");
         }
     }
 }

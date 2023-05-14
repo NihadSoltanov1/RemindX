@@ -36,15 +36,21 @@ namespace RemindX.API.Controllers
         public async Task<IActionResult> Update(Remind model)
         {
             Remind data = await _remindReadRepository.GetByIdAsync(model.Id);
-            _remindWriteRepository.Update(model);
+            data.Content = model.Content;
+            data.Receiver = model.Receiver;
+            data.RemindDate = model.RemindDate;
+            data.MetodType = model.MetodType;
+            _remindWriteRepository.Update(data);
             _remindWriteRepository.SaveChangeAsync();
             return Ok();
         }
 
-        [HttpDelete]
+        [HttpDelete("id")]
         public async Task<IActionResult> Delete(int id)
         {
-            _remindWriteRepository.RemoveAsync(id);
+            Remind data = await _remindReadRepository.GetByIdAsync(id);
+            _remindWriteRepository.Remove(data);
+            _remindWriteRepository.SaveChangeAsync();
             return Ok();
         }
 
